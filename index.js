@@ -10,7 +10,6 @@ const server = Hapi.server({
 })
 
 const init = async () => {
-
     await server.register({ plugin: Graphi, options: { schema, resolvers } })
     server.start((err) => {
         if (err) throw err

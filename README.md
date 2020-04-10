@@ -30,9 +30,9 @@ Query
 ```sh
 curl -X POST "http://localhost:3000/graphql" -H "Content-Type: application/json" -d '{ "query": "query { person(firstname: \"Adolfo\") { lastname } }" }'
 ```
-Mutation* 
+Mutation
 ```sh
-curl -X POST "http://localhost:3000/graphql" -H "Content-Type: application/json" -d '{ "query": "query { createPerson(data: {firstname: \"Esteban\", lastname: \"Sanchez\", gender: MASCULINO}) { id } }" }'
+curl -X POST "http://localhost:3000/graphql" -H "Content-Type: application/json" -d '{ "query": "mutation { createPerson(data: {firstname: \"Esteban\", lastname: \"Sanchez\", gender: MASCULINO}) { id } }" }'
 
 ```
 ## Otras formas de configurar Graphi

@@ -15,6 +15,9 @@ type Query {
   persons: [Person]
   person(firstname: String!): Person
   getPersonById(id: ID!): Person
+}
+
+type Mutation {
   createPerson(data: PersonInput): Person!
 }
 
@@ -25,9 +28,6 @@ input PersonInput {
 }
 
 `;
-// type Mutation {
-//   createPerson(data: Person!): Person!
-// }
 module.exports = {
   schema
 }
