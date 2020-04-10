@@ -26,11 +26,15 @@ sudo npm i dotenv -S
 ```
 
 ## Probar server
-
+Query
 ```sh
-curl -X POST "http://localhost:3000/graphql" -H "Content-Type: application/json" -d '{ "query": "query { person(firstname: \"billy\") { lastname } }" }'
+curl -X POST "http://localhost:3000/graphql" -H "Content-Type: application/json" -d '{ "query": "query { person(firstname: \"Adolfo\") { lastname } }" }'
 ```
+Mutation* 
+```sh
+curl -X POST "http://localhost:3000/graphql" -H "Content-Type: application/json" -d '{ "query": "query { createPerson(data: {firstname: \"Esteban\", lastname: \"Sanchez\", gender: MASCULINO}) { id } }" }'
 
+```
 ## Otras formas de configurar Graphi
 
 GraphQLSchema Instance
